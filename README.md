@@ -85,7 +85,7 @@ You need a stylus pen for touch panel operation.
 
 # The limitation of FT810    
 
-FT800 have 800x480 resolution.   
+FT810 have 800x480 resolution.   
 You need a stylus pen for touch panel operation.   
 
 ----
