@@ -77,6 +77,33 @@ FT800 have 482x272 resolution.
 FT800 doesn't have the function which plays the video.   
 FT800 doesn't have the function which revolves around a screen.   
 
+----
+
+# begin options   
+
+You can use there option in begin().   
+
+GD_CALIBRATE   
+Execute Calibration of a touch sensor.   
+A screen for calibration is indicated.   
+If there is calibration data already, nothing is done.   
+Calibration data is preserved by EEPROM.   
+
+GD_TRIM   
+Execute sound tests.   
+
+GD_STORAGE   
+A SD card is initialized.   
+When you use a SD card, it's always necessary.   
+
+FORCE_CALIBRATE   
+Execute Calibration of a touch sensor unconditionally.   
+A screen for calibration is indicated.   
+Calibration data is preserved by EEPROM.   
+
+GD_NONE   
+Nothing is done.   
+
 ---
 
 # Demo Video
