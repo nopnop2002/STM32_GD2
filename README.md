@@ -41,7 +41,6 @@ https://github.com/greiman/SdFat
 
 
 \*You can change any pin.  
-
 Pin define is "STM32_GD2.h"   
 
 \**If you want to hear Audio, You need External Audio Circuit.  
@@ -56,6 +55,18 @@ https://www.hotmcu.com/5-graphical-lcd-touchscreen-480x272-spi-ft800-p-124.html?
 
 5" Graphical LCD Touchscreen, 800x480, SPI, FT810   
 https://www.hotmcu.com/5-graphical-lcd-touchscreen-800x480-spi-ft810-p-286.html?cPath=6_16&zenid=kfemikenqkhmjdmc0evd16j1m4   
+
+----
+
+# How to use   
+
+Download Gameduino2sd.zip from here & unzip it & copy all file to your SD-CARD.   
+http://excamera.com/sphinx/gameduino2/code.html   
+
+
+Wireing TFT & SD-CARD reader to STM32F103.   
+
+Try example.   
 
 ----
 
