@@ -22,8 +22,8 @@ https://github.com/greiman/SdFat
 # Wirering for FT8XX TFT   
 
 
-|TFT||STM32F103||SD-CARD
-|:-:|:-:|:-:|
+|TFT||STM32F103||SD-CARD|
+|:-:|:-:|:-:|:-:|:-:|
 |GND|--|GND|
 |MISO|--|PA6|
 |CS|--|PA4(*)|
