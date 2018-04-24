@@ -49,6 +49,7 @@ The complete Audio Circuit is here.
 https://www.soselectronic.cz/a_info/resource/c/FTDI/AN_252_FT800_Audio_Primer.pdf   
 
 **All wiring has to be the length below the 5CM.**  
+**When wiring is the length beyond 5CM, it doesn't work mostly.**   
 
 ----
 
