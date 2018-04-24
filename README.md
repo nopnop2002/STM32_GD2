@@ -37,7 +37,8 @@ https://github.com/greiman/SdFat
 |||PB13|--|SCK|
 |||PB15|--|MOSI|
 |||PB14|--|MISO|
-
+|||5V|--|VCC|
+|||GND|--|GND|
 
 
 \*You can change any pin.  
