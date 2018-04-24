@@ -33,7 +33,7 @@ https://github.com/greiman/SdFat
 |MISO|--|PA7|
 |INT|--|N/C|
 |AUDIO|--|(**)|
-|||PB12|--|CS(*)|
+|||PB12(*)|--|CS|
 |||PB13|--|SCK|
 |||PB15|--|MOSI|
 |||PB14|--|MISO|
