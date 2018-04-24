@@ -48,6 +48,8 @@ Pin define is "STM32_GD2.h"
 The complete Audio Circuit is here.   
 https://www.soselectronic.cz/a_info/resource/c/FTDI/AN_252_FT800_Audio_Primer.pdf   
 
+**All wiring has to be below the 5cM.**  
+
 ----
 
 # Tested TFT    
