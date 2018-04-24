@@ -79,6 +79,7 @@ Try example.
 FT800 have 482x272 resolution.   
 FT800 doesn't have the function which plays the video.   
 FT800 doesn't have the function which revolves around a screen.   
+You need a stylus pen for touch panel operation.   
 
 ----
 
