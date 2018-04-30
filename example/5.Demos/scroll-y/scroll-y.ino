@@ -34,19 +34,25 @@ public:
   }
 };
 
-char lines[60][10];
+char lines[100][10];
 int num_jpgs = 0;
 scroller yscroll;
 
 void setup()
 {
-  for(int i=0;i<50;i++) {
+  for(int i=0;i<100;i++) {
     char wk[8];
     sprintf(wk,"Line# %d",i+1);
     strcpy(lines[i],wk);
     num_jpgs++;
   }
   GD.begin();
+  if (GD.model == 800) {
+    GD.cmd_text(GD.w / 2, GD.h / 2, 31, OPT_CENTER, "This is FT81X exclusive use");
+    GD.swap();
+  } else {
+    GD.cmd_setrotate(2);
+  }
 }
 
 static void showdir0(char lines[][10], int num_jpgs, int yb, int sel)
@@ -89,24 +95,25 @@ static void showdir1(char lines[][10], int num_jpgs, int yb, int sel)
 void loop()
 {
   static int picked = -1;
-  int displayLines = 7;
-  if (GD.model != 800) displayLines = 12;
-//  yscroll.init((40L * (num_jpgs - 4)) << 4);
-  if (picked == -1) yscroll.init((40L * (num_jpgs - displayLines)) << 4);
 
-  do {
-    GD.get_inputs();
-    byte touching = (GD.inputs.x != -32768) && (GD.inputs.tag < 128);
-    yscroll.run(touching, GD.inputs.y);
-
-    showdir0(lines, num_jpgs, yscroll.base >> 4, picked);
-    showdir1(lines, num_jpgs, yscroll.base >> 4, picked);
-    GD.swap();
-  } while (GD.inputs.tag < 128);
-  picked = GD.inputs.tag - 128;
-
-  Serial.println("picked=" + String(picked));
-
+  if (GD.model != 800) {
+    int displayLines = 20;
+  //  yscroll.init((40L * (num_jpgs - 4)) << 4);
+    if (picked == -1) yscroll.init((40L * (num_jpgs - displayLines)) << 4);
+  
+    do {
+      GD.get_inputs();
+      byte touching = (GD.inputs.x != -32768) && (GD.inputs.tag < 128);
+      yscroll.run(touching, GD.inputs.y);
+  
+      showdir0(lines, num_jpgs, yscroll.base >> 4, picked);
+      showdir1(lines, num_jpgs, yscroll.base >> 4, picked);
+      GD.swap();
+    } while (GD.inputs.tag < 128);
+    picked = GD.inputs.tag - 128;
+  
+    Serial.println("picked=" + String(picked));
+  }
 
 }
 
