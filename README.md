@@ -93,7 +93,7 @@ You need a stylus pen for touch panel operation.
 # begin options   
 
 You can use there option in begin().   
-https://www.youtube.com/watch?v=NyIk51anVQI
+
 GD_CALIBRATE   
 Execute Calibration of a touch sensor.   
 A screen for calibration is indicated.   
